@@ -77,15 +77,11 @@ public class Dia2 {
 
         // Instrucción 13:
         // Crea una lista de 3 personas nuevas usando `Supplier` o `BiFunction`
-
-        // Instrucción 14:
-        // Usa `Consumer` para saludarlas en mayúsculas (usa `toUpperCase()`)
-
-        // Instrucción 15:
-        // Usa la función del punto 12 para clasificarlas por edad
-
-        // Instrucción 16:
-        // Imprime el resultado final con encabezados: "Mayores:" y "Menores:" usando `forEach`
+        Supplier<List<Persona>> crear3 = () -> Arrays.asList(
+                new Persona("pepe", 23),
+                new Persona("pepito", 13),
+                new Persona("junaito", 43)
+        );
 
     }
 
